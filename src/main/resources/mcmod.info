@@ -1,0 +1,15 @@
+[
+{
+  "modid": "usefulrecipes",
+  "name": "UsefulRecipes",
+  "description": "This mod adds a lot of useful recipes for your survival",
+  "version": "1.1.0",
+  "mcversion": "1.8.9",
+  "url": "http://www.curse.com/mc-mods/minecraft/240824-useful-recipes",
+  "updateUrl": "",
+  "authorList": ["sokratis12GR"],
+  "credits": "mod created and developed by sokratis12GR",
+  "screenshots": [],
+  "dependencies": []
+}
+]
