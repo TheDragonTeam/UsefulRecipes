@@ -14,6 +14,7 @@ public class ConfigHandler
 	public static boolean GoldArmorToGold;
 	public static boolean DiamondArmorToDiamond;
 	public static boolean IronArmorToIron;
+	public static boolean LeatherArmorToLeather;
 	public static boolean WoodenSlabsToPlanks;
 	public static boolean StoneSlabsToStone;
 	public static boolean WoolToString;
@@ -40,6 +41,8 @@ public class ConfigHandler
 		// Crafting Recipes
 		category = "Crafting";
 		config.setCategoryLanguageKey("Crafting", "config.crafting");
+		LeatherArmorToLeather= config.getBoolean("LeatherArmorToLeather", category, true,
+				"Enable/Disable LeatherArmorToLeather Crafting");
 		GoldArmorToGold = config.getBoolean("GoldArmorToGold", category, true,
 				"Enable/Disable GoldArmorToGold Crafting");
 		IronArmorToIron = config.getBoolean("IronArmorToIron", category, true,

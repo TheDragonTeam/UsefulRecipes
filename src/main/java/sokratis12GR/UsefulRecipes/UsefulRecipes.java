@@ -1,31 +1,34 @@
 package sokratis12GR.UsefulRecipes;
 
-import java.io.File;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import net.minecraft.entity.player.*;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.*;
-import net.minecraftforge.common.*;
-import net.minecraftforge.fml.common.*;
-import net.minecraftforge.fml.common.event.*;
+import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.network.*;
+import net.minecraftforge.fml.common.SidedProxy;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
+import net.minecraftforge.fml.common.network.IGuiHandler;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import sokratis12GR.UsefulRecipes.util.TextHelper;
 
-@Mod(modid = UsefulRecipes.MODID, name = UsefulRecipes.MODNAME, version = UsefulRecipes.VERSION, dependencies = UsefulRecipes.DEPEND, guiFactory = UsefulRecipes.GUIFACTORY)
+import java.io.File;
+
+@Mod(modid = UsefulRecipes.MODID, name = UsefulRecipes.MODNAME, version = UsefulRecipes.VERSION, dependencies = UsefulRecipes.DEPEND, guiFactory = UsefulRecipes.GUIFACTORY, updateJSON =  "https://github.com/sokratis12GR/VersionUpdate/blob/gh-pages/UsefulRecipes.json")
 public class UsefulRecipes
 {
 
 	public static final String MODNAME = "UsefulRecipes";
 	public static final String MODID = "usefulrecipes";
-	public static final String VERSION = "1.1";
+	public static final String VERSION = "1.2";
 	public static final String DEPEND = "";
 	public static final String CLIENTPROXY = "sokratis12GR.UsefulRecipes.ClientProxy";
 	public static final String COMMONPROXY = "sokratis12GR.UsefulRecipes.CommonProxy";
@@ -238,6 +241,18 @@ public class UsefulRecipes
 			{ new ItemStack(Items.golden_leggings, 1), });
 			GameRegistry.addShapelessRecipe(new ItemStack(Items.gold_ingot, 4), new Object[]
 			{ new ItemStack(Items.golden_boots, 1), });
+		}
+		if (ConfigHandler.LeatherArmorToLeather)
+		{
+			// Leather Armor To Leather
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.leather, 5), new Object[]
+					{ new ItemStack(Items.leather_helmet, 1), });
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.leather, 8), new Object[]
+					{ new ItemStack(Items.leather_chestplate, 1), });
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.leather, 7), new Object[]
+					{ new ItemStack(Items.leather_leggings, 1), });
+			GameRegistry.addShapelessRecipe(new ItemStack(Items.leather, 4), new Object[]
+					{ new ItemStack(Items.leather_boots, 1), });
 		}
 		/*
 		 * Smelting Recipes
