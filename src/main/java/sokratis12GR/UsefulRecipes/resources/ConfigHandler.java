@@ -1,4 +1,4 @@
-package sokratis12GR.UsefulRecipes;
+package sokratis12GR.UsefulRecipes.resources;
 
 import net.minecraftforge.common.config.Configuration;
 import java.io.File;
@@ -14,6 +14,7 @@ public class ConfigHandler
 	public static boolean GoldArmorToGold;
 	public static boolean DiamondArmorToDiamond;
 	public static boolean IronArmorToIron;
+	public static boolean LeatherArmorToLeather;
 	public static boolean WoodenSlabsToPlanks;
 	public static boolean StoneSlabsToStone;
 	public static boolean WoolToString;
@@ -26,7 +27,7 @@ public class ConfigHandler
 	public static boolean FasterIronSmelting;
 	public static boolean FasterGoldSmelting;
 
-	public static boolean setCategoryRequiresMcRestart;
+	public static boolean NetherStarFragmentRecipe;
 
 	public static void init(File file)
 	{
@@ -39,7 +40,8 @@ public class ConfigHandler
 		String category;
 		// Crafting Recipes
 		category = "Crafting";
-		config.setCategoryLanguageKey("Crafting", "config.crafting");
+		LeatherArmorToLeather= config.getBoolean("LeatherArmorToLeather", category, true,
+				"Enable/Disable LeatherArmorToLeather Crafting");
 		GoldArmorToGold = config.getBoolean("GoldArmorToGold", category, true,
 				"Enable/Disable GoldArmorToGold Crafting");
 		IronArmorToIron = config.getBoolean("IronArmorToIron", category, true,
@@ -61,14 +63,16 @@ public class ConfigHandler
 				"Enable/Disable FasterIronSmelting Crafting");
 		FasterGoldSmelting = config.getBoolean("FasterGoldSmelting", category, true,
 				"Enable/Disable FasterGoldSmelting Crafting");
+		//Nether Star Recipes
+		NetherStarFragmentRecipe = config.getBoolean("NetherStarFragmentRecipe", category, false,
+				"Enable/Disable Nether Star Fragment Recipe");
 
+		// Smelting Recipes
 		// Smelting Recipes
 		category = "Smelting";
 		PoisonPotatoSmelting = config.getBoolean("PoisonPotatoSmelting", category, true,
 				"Enable/Disable PoisonPotato Smelting");
 		FleshToBeef = config.getBoolean("FleshToBeef", category, true, "Enable/Disable FleshToBeef Smelting");
-		config.setCategoryLanguageKey("Smelting", "config.smelting");
-
 		if (config.hasChanged())
 			config.save();
 	}
