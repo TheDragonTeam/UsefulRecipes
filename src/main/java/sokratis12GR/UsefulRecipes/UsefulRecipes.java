@@ -25,12 +25,12 @@ import sokratis12GR.UsefulRecipes.util.TextHelper;
 
 import java.io.File;
 
-@Mod(modid = UsefulRecipes.MODID, name = UsefulRecipes.MODNAME, version = UsefulRecipes.VERSION, dependencies = UsefulRecipes.DEPEND, guiFactory = UsefulRecipes.GUIFACTORY, updateJSON = "https://github.com/sokratis12GR/VersionUpdate/blob/gh-pages/UsefulRecipes.json")
+@Mod(modid = UsefulRecipes.MODID, name = UsefulRecipes.MODNAME, version = UsefulRecipes.VERSION, acceptedMinecraftVersions = "[1.9.4,1.10)", dependencies = UsefulRecipes.DEPEND, guiFactory = UsefulRecipes.GUIFACTORY, updateJSON = "https://github.com/sokratis12GR/VersionUpdate/blob/gh-pages/UsefulRecipes.json")
 public class UsefulRecipes {
 
     public static final String MODNAME = "UsefulRecipes";
     public static final String MODID = "usefulrecipes";
-    public static final String VERSION = "2.0.0";
+    public static final String VERSION = "1.9.4-2.0.0.0";
     public static final String DEPEND = "";
     public static final String CLIENTPROXY = "sokratis12GR.UsefulRecipes.ClientProxy";
     public static final String COMMONPROXY = "sokratis12GR.UsefulRecipes.CommonProxy";
