@@ -7,7 +7,7 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.fml.client.config.GuiConfig;
 import net.minecraftforge.fml.client.config.IConfigElement;
-import sokratis12GR.UsefulRecipes.resources.ConfigHandler;
+import sokratis12GR.UsefulRecipes.ConfigHandler;
 import sokratis12GR.UsefulRecipes.UsefulRecipes;
 import sokratis12GR.UsefulRecipes.util.TextHelper;
 
