@@ -1,8 +1,8 @@
-package sokratis12GR.UsefulRecipes.registry;
+package net.thedragonteam.usefulrecipes.registry;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import sokratis12GR.UsefulRecipes.items.NetherStarFragment;
+import net.thedragonteam.usefulrecipes.items.NetherStarFragment;
 
 public class ModItems {
 

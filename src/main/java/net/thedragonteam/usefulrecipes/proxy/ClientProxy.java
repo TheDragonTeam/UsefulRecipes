@@ -1,4 +1,6 @@
-package sokratis12GR.UsefulRecipes;
+package net.thedragonteam.usefulrecipes.proxy;
+
+import net.thedragonteam.usefulrecipes.UsefulRecipes;
 
 public class ClientProxy extends CommonProxy
 {

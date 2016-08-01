@@ -1,4 +1,4 @@
-package sokratis12GR.UsefulRecipes.util;
+package net.thedragonteam.usefulrecipes.util;
 //General place to call text formatting from. You can alternatively use 'EnumChatFormatting'.
 
 

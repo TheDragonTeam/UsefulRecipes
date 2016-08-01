@@ -1,4 +1,4 @@
-package sokratis12GR.UsefulRecipes.items;
+package net.thedragonteam.usefulrecipes.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class NetherStarFragment extends Item {
 
     public NetherStarFragment() {
-        setRegistryName("NetherStarFragment");        // The unique name (within your mod) that identifies this item
+        setRegistryName("nether_star_fragment");        // The unique name (within your mod) that identifies this item
         setUnlocalizedName("NetherStarFragment");     // Used for localization (en_US.lang)
         GameRegistry.register(this);
     }

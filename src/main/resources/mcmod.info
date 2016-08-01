@@ -3,12 +3,12 @@
   "modid": "usefulrecipes",
   "name": "UsefulRecipes",
   "description": "This mod adds a lot of useful recipes for your survival",
-  "version": "1.9.4-2.0.0.1",
-  "mcversion": "1.9.4",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["sokratis12GR, Moritz30"],
-  "credits": "sokratis12GR",
+  "credits": "",
   "screenshots": [],
   "dependencies": []
 }
