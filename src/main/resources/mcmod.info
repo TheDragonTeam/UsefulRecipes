@@ -1,15 +1,17 @@
 [
-{
-  "modid": "usefulrecipes",
-  "name": "UsefulRecipes",
-  "description": "This mod adds a lot of useful recipes for your survival",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["sokratis12GR, Moritz30"],
-  "credits": "",
-  "screenshots": [],
-  "dependencies": []
-}
+    {
+      "modid": "usefulrecipes",
+      "name": "UsefulRecipes",
+      "description": "This mod adds a lot of useful recipes for your survival",
+      "version": "${version}",
+      "mcversion": "${mcversion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": [
+        "sokratis12GR and Moritz30 in Association with TheDragonTeam."
+       ],
+      "credits": "",
+      "screenshots": [],
+      "dependencies": []
+    }
 ]
